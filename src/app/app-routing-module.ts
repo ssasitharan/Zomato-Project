@@ -18,7 +18,8 @@ import { Servicedemo } from './servicedemo/servicedemo';
 import { Apiint } from './apiint/apiint';
 
 const routes: Routes = [
-  { path: '', component: Landing },
+  
+  { path: '', component: Home },
   { path: 'home', component: Home },
   { path: 'about', component: About },
   { path: 'gallery', component: Gallery },

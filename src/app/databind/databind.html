@@ -1,1 +1,33 @@
-<p>databind works!</p>
+<div style="text-align: center;">
+Addition of 3 and 5 with : {{3 + 5}}
+My name is : {{name}}
+<br>
+{{company}} Limited ( Wipro ) is an Indian multinational
+technology company based in Bengaluru
+{{company}}'s services include cloud computing,
+computer security, digital transformation,
+artificial intelligence, robotics, data analytics,
+{{company}} developed the first Indian minicomputer
+based on the Intel 8086 chip
+<hr>
+
+<input type="submit" (click)="abc()">
+<br>
+My Name is : {{user}} <br>
+<input type="text" #myname>
+<input type="submit" value="Submit" (click)="xyz(myname.value)">
+<!-- onbdc ..onsubmit, onfocu,onblue, onmousemove etc...-->
+<img [src]="foodimg" [alt]="altmsg" style="width: 100px;">
+</div>
+
+<!--
+2 types of data binding in angular
+
+1 way Data Binding
+1. Interpolation : {{}}
+2. Event Binding : (event) = "function()"
+3. Property Binding : [property] = "value"
+
+2 way Data Binding : [(ngmodel)] = "value":
+later i'll explain this in form validation section
+-->
