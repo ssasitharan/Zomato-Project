@@ -1,0 +1,19 @@
+<h2 class="title">Non-Veg Restaurants</h2>
+
+<div class="grid">
+  <div class="card" *ngFor="let item of nonvegItems">
+
+    <img [src]="item.image">
+
+    <div class="offer">Flat {{item.offer}}% OFF</div>
+
+    <h3>{{item.name}}</h3>
+    <p>{{item.type}}</p>
+
+    <div class="bottom">
+      <span class="rating">{{item.rating}} ⭐</span>
+      <span class="price">₹{{item.price}} for two</span>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<nav class="navbar">
+  <h2>Zomato</h2>
+
+  <div class="nav-links">
+
+    <!-- ✅ Existing Links -->
+    <a routerLink="">Home</a>
+    <a routerLink="about">About</a>
+
+    <!-- ✅ Food Dropdown -->
+    <div class="dropdown">
+      <span>Food ▼</span>
+      <div class="dropdown-content">
+        <a routerLink="veg">Veg</a>
+        <a routerLink="nonveg">Non Veg</a>
+        <a routerLink="drinks">Drinks</a>
+      </div>
+    </div>
+
+    <!-- ✅ ADD YOUR NEW MENU HERE -->
+    <div class="dropdown">
+      <span>Topics ▼</span>
+      <div class="dropdown-content">
+        <a routerLink="databinding">DataBinding</a>
+        <a routerLink="directive">Directive</a>
+        <a routerLink="pipe">Pipe</a>
+        <a routerLink="forms">Forms</a>
+        <a routerLink="services">Services</a>
+        <a routerLink="api-integration">API Integration</a>
+      </div>
+    </div>
+
+    <!-- ✅ Other Links -->
+    <a routerLink="login">Login</a>
+    <a routerLink="signup">Signup</a>
+
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
